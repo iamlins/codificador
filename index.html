@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e Codificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/icons-svg/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <aside class="aside">
+        <header class="aside__header">
+            <img src="./assets/icons-svg/logo.svg" alt="logo alura">
+            <h1>Challenge Oracle One Alura 2024</h1>
+            <input class="aside__checkbox js-checkbox" id="checkbox" type="checkbox" name="checkbox">
+            <div class="aside__button-toggle">
+                <img class="aside__icon-theme is-icon-white is-moon" src="./assets/icons-svg/moon.svg" alt="Icone da Lua">
+                <img class="aside__icon-theme is-icon-black" src="./assets/icons-svg/sun.svg" alt="Icone do Sol">
+                <label for="checkbox" class="aside__circle js-btn-toggle"></label>
+            </div>
+        </header>
+    </aside>
+
+    <main class="main">
+        
+    <div class="container-input">
+        <div class="input">
+            <textarea  id="input-text" placeholder="Digite o seu texto aqui..."></textarea>
+        
+        </div>
+        <p class="input-paragrafo"> <img src="./assets/icons-svg/warning.svg" alt=""> Atencao: apenas letras minusculas e sem acentos</p>
+        <div id="output">
+        <img src="./assets/icons-svg/illustration.png" alt="logo alura">
+        <h2>Sua mensagem aparecerá aqui</h2>
+        </div>
+        
+    </div>
+
+    <div class="main__wrapper-button">
+        <button onclick="criptografar()" class="is-button-large is-encrypt js-encrypt" type="button">
+            <img class="is-icon-black" src="./assets/icons-svg/encrypt.svg" alt="Imagem de um cadeado fechado">
+            Criptografar
+        </button>
+        <button onclick="descriptografar()" class="is-button-large is-descrypt js-descrypt" type="button">
+            <img class="is-icon-white" src="./assets/icons-svg/descrypt.svg" alt="Imagem de um cadeado aberto">
+            Descriptografar
+        </button>
+    </div>
+
+    </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/iamlins" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://linkedin.com/in/leonardolinsv" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+            <a href="https://instagram.com/iam.lins" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por iam lins</h3>
+    </footer>
+
+
+
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
